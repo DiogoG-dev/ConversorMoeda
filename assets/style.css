@@ -1,5 +1,9 @@
 :root {
     --bg-color1: #121212;
+    --bg-color2: #000000;
+
+    --color1: #00ff00;
+
     --DM-Sans: 'DM Sans', sans-serif;
 }
 
@@ -14,11 +18,16 @@ body {
 header {
     height: 150px;
     font-size: 24px;
-    color: #00ff00;
+    color: var(--color1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 span {
-    color: #00ff00;
+    color: var(--color1);
     font-size: 20px;
     font-weight: 700;
 }
@@ -28,7 +37,7 @@ section {
     justify-content: space-between;
     width: 500px;
     padding: 10px;
-    background-color: #000000;
+    background-color: var(--bg-color2);
     border-radius: 15px;
 }
 
@@ -44,9 +53,16 @@ input {
     color: #fff;
 }
 
+.notice {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 footer {
     height: 50px;
-    color: #00ff00;
+    color: var(--color1);
     position: fixed;
     bottom: 0;
     font-weight: 600;

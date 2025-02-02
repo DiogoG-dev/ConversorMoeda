@@ -1,5 +1,4 @@
 const dolar = 5.84;
-
 const valueDollar = 5.84;
 
 let usdInput = document.querySelector('#usd');
@@ -18,10 +17,5 @@ brlInput.addEventListener('keyup', () => {
 function fixValue(value) {
     let fixedValue = value.replace(',', '.');
     let floatValue = parseFloat(fixedValue);
-
-    if(floatValue == NaN) {
-        floatValue = 0;
-    }
-
     return floatValue;
 }
